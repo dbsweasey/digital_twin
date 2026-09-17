@@ -33,9 +33,16 @@ app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(SlowAPIMiddleware)
 
+origins = [
+    "http://localhost:5173",
+    "https://davidbsweasey.ai",
+    "https://davidbsweasey.com",
+    "https://personal-webpage-git-dev-dbsweaseys-projects.vercel.app/"
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://davidbsweasey.ai", "https://davidbsweasey.com"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]
