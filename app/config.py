@@ -3,8 +3,11 @@ import os
 
 load_dotenv(override=True)
 
-PUSHOVER_USER = os.getenv('PUSHOVER_USER')
-PUSHOVER_TOKEN = os.getenv('PUSHOVER_TOKEN')
+# SMTP Email Notification System
+TO_EMAIL_ADDRESS = os.getenv("TO_EMAIL_ADDRESS")
+FROM_EMAIL_ADDRESS = os.getenv("FROM_EMAIL_ADDRESS")
+EMAIL_SMTP_SERVER = os.getenv("EMAIL_SMTP_SERVER")
+EMAIL_APP_PASSWORD = os.getenv("EMAIL_APP_PASSWORD")
 
 # --- Rate limiting ---
 

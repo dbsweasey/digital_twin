@@ -4,7 +4,7 @@ from collections import deque
 import time
 import config
 from agents import Agent, Runner, RunConfig, ModelSettings, SQLiteSession
-from tools import record_user_details, unknown_question, search_projects, get_project_details
+from tools import record_user_details, unknown_question, search_projects, get_project_details, list_projects_by_category
 from context import SYSTEM_PROMPT
 
 @dataclass
@@ -31,7 +31,8 @@ class Twin():
                 record_user_details,
                 unknown_question,
                 search_projects,
-                get_project_details
+                get_project_details,
+                list_projects_by_category
             ]
         )
         self.sessions: dict[str, Session] = {}

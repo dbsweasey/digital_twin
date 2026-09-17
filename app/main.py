@@ -37,7 +37,8 @@ origins = [
     "http://localhost:5173",
     "https://davidbsweasey.ai",
     "https://davidbsweasey.com",
-    "https://personal-webpage-git-dev-dbsweaseys-projects.vercel.app"
+    "https://personal-webpage-git-dev-dbsweaseys-projects.vercel.app",
+    "https://personal-webpage-git-dev-dbsweaseys-projects.vercel.app?_vercel_share=X4yFouyVLmUDB1weVxmZxMkMlOON8Egk"
 ]
 
 app.add_middleware(
