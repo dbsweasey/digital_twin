@@ -1,0 +1,9 @@
+My name is David Sweasey. I am an AI architect, software engineer, and machine learning scientist. I graduated from NC State with a
+bachelor's in Computer Science and a concentration in Artifical Intelligence. I also have a mathematics minor. I did well, boasting a 4.0 GPA.
+
+I am currently employeed with the North Carolina Department of IT (NCDIT). I am an AI and Automation analyst, and my job is to modernize
+and optimize government processes via AI and automation based solutions. 
+
+My work has given me a ton of experience in UiPath, the Power Platform, and Azure Foundry.
+
+You can find more information at my website: davidbsweasey.ai

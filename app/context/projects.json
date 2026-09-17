@@ -1,0 +1,139 @@
+{
+    "projects": [
+        {
+            "id": "stock_visualizer",
+            "name": "Stocks Visualizer",
+            "aliases": ["stock dashboard", "websocket stocks", "alpaca stocks"],
+            "summary": "WebSocket based live stocks dashboard. Built with Python FastAPI and a JS+Vite+React frontend.",
+            "role": "Sole developer",
+            "context": "Personal project",
+            "stack": ["React", "Python", "FastAPI"],
+            "metrics": ["Supports multiple candlestick charts", "1-second interval candles", "Real-time updates on a per-trade basis"],
+            "links": {"repo": "https://github.com/dbsweasey/stock_visualizer"},
+            "timeframe": "2025-2026"
+        },
+        {
+            "id": "intelligent_api_scheduler",
+            "name": "Intelligent API Scheduler",
+            "aliases": ["api scheduler", "nasa api", "api dashboard"],
+            "summary": "An asynchronous API scheduling service built with FastAPI and Python. The system manages API requests through a priority queue, token-bucket rate limiting, exponential-backoff retry policies, persistent job tracking, and a real-time WebSocket dashboard. Backend containerized in Docker.",
+            "role": "Sole developer",
+            "context": "Personal project",
+            "stack": ["React", "Python", "FastAPI", "SQLite", "Alembic", "Docker"],
+            "metrics": ["Per-client retry policies and token bucketing", "Prioritizes jobs", "Live dashboard"],
+            "links": {"repo": "https://github.com/dbsweasey/intelligent-api-scheduler"},
+            "timeframe": "2026"
+        },
+        {
+            "id": "poker_bot",
+            "name": "Texas Hold'em Poker Bot",
+            "aliases": ["poker llm", "poker ai", "auto poker"],
+            "summary": "A web-scraper that reads the current poker game-state, evaluates the current position, calls an LLM for the optimal move, and drives the browser based on the LLMs response.",
+            "role": "Sole developer",
+            "context": "Personal project",
+            "stack": ["Python", "Selenium", "OpenAI"],
+            "metrics": ["Small per turn context", "Sends witty quips on each turn"],
+            "links": {},
+            "timeframe": "2026"
+        },
+        {
+            "id": "spotify_recommender",
+            "name": "Spotify Recommender",
+            "aliases": ["spotify dashboard", "recommendation engine", "music project"],
+            "summary": "A vibe-coded Spotify app that has playback controls, a listening history, and a simple recommendation engine. Frontend in Vercel, backend deployed in Render, and uses Neon to host a Postgres database.",
+            "role": "Developer alongside Claude Code",
+            "context": "Personal project",
+            "stack": ["Python", "FastAPI", "React", "Javascript", "PostgreSQL"],
+            "metrics": ["Authentication via Spotify OAuth", "5-sec pooling for playback status", "Live history generation with backfilling 'sync' option", "Recommendation engine based on genre cosine similairities", "Deployed completely for free"],
+            "links": {"repo": "https://github.com/dbsweasey/spotify_recommender"},
+            "timeframe": "2026"
+        },
+        {
+            "id": "digital_twin",
+            "name": "Digital Twin",
+            "aliases": ["digital agent", "ai twin", "twin guy"],
+            "summary": "An AI agent built to act as a digital twin of David Sweasey. Uses an OpenAI LLM to answer questions relating to his career, background, experience, and skills.",
+            "role": "Sole developer",
+            "context": "Personal project for professional networking",
+            "stack": ["Python", "FastAPI", "SQLite", "OpenAI"],
+            "metrics": ["Multiple tools for accurate responses", "Contextual memory for follow-up questions", "Rate limiting and caching for cost control", "Sessions are saved for future reference"],
+            "links": {},
+            "timeframe": "2026"
+        },
+        {
+            "id": "skin_cancer_classifier",
+            "name": "Skin Cancer Classifier",
+            "aliases": ["skin cancer ai", "skin cancer ml", "skin cancer cnn"],
+            "summary": "A convolutional neural network built to classify skin cancer images. Trained on a 10,000 image dataset. Boasts a 90% accuracy, has visual metrics and a heat map.",
+            "role": "Developer on a team of 3",
+            "context": "Class project for an AI course",
+            "stack": ["Python", "Jupyter", "PyTorch", "Matplotlib"],
+            "metrics": ["90% accuracy on test set", "Heat map for visualizing model focus", "Visual metrics for model performance"],
+            "links": {"repo": "https://github.com/dbsweasey/skin_cancer_image_classification"},
+            "timeframe": "2024"
+        },
+        {
+            "id": "baseball_data_science",
+            "name": "Baseball Data Science",
+            "aliases": ["baseball decision tree", "baseball statistics", "predictive baseball"],
+            "summary": "A data science project that uses a decision tree to predict how well a baseball team will perform based on recent historical data. The model uses player statistics and custom metrics to make its predictions.",
+            "role": "Developer on a team of 3",
+            "context": "Class project for a data science course",
+            "stack": ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],
+            "metrics": ["Decision tree model for predictions", "Custom BAT_SCORE metric for player offensive performance", "Intensive data cleaning, preprocessing, and feature engineering"],
+            "links": {"repo": "https://github.com/csc442-team11/MLB-Data-Analysis/blob/main/Colab%20Notebooks/final_data_analysis.ipynb"},
+            "timeframe": "2025",
+            "notes": "This project was a team effort. I did most of the data cleaning, preprocessing, and feature engineering. I also implemented the decision tree model and created the BAT_SCORE metric."
+        },
+        {
+            "id": "ncdit_procurement_tracker",
+            "name": "NCDIT Procurement Tracker",
+            "aliases": ["procurement tracker", "ncdit pizza tracker", "senior seminar project"],
+            "summary": "A full-stack application that tracks the status of a procurement project. It is displayed similarly to a pizza tracker, contains additional educational content, RBAC, and is built with Ruby on Rails.",
+            "role": "Developer on a team of 5",
+            "context": "Senior seminar project",
+            "stack": ["Ruby on Rails", "BootstrapCSS", "MySQL", "Docker"],
+            "metrics": ["RBAC for different user roles", "Educational content for procurement process", "Clean NCDIT branded UI"],
+            "links": {},
+            "timeframe": "2025"
+        },
+        {
+            "id": "personal_webpage",
+            "name": "Personal Webpage",
+            "aliases": ["personal website", "portfolio website", "david sweasey website"],
+            "summary": "A personal webpage built with React and Vite. It is a single-page application that showcases my projects, skills, and experience. Connects to a Next.js backend for Spotify Now Playing data and a FastAPI backend that hosts the digital twin.",
+            "role": "Sole developer",
+            "context": "Personal project, for professional networking",
+            "stack": ["React", "Vite", "Next.js", "FastAPI"],
+            "metrics": ["Single-page application", "Connects to multiple backends for dynamic data", "Clean, responsive, and, personalized UI"],
+            "links": {"repo": "https://github.com/dbsweasey/personal_webpage", "live": "https://www.davidbsweasey.ai"},
+            "timeframe": "2025-2026"
+        },
+        {
+            "id": "ncdit_fluid",
+            "name": "FLUID",
+            "aliases": ["ncdit fluid", "fluid project"],
+            "summary": "A full-stack form filling application with Agentic form-filling assistance. Built form-agnostic, so any form can be imported. The system is built with Power Pages, Power Automate, Dataverse, Azure OpenAI, and Azure Function Apps.",
+            "role": "Developer below the solutions architect",
+            "context": "Professional project while working at NCDIT",
+            "stack": ["Power Pages", "Power Automate", "Dataverse", "Azure OpenAI", "Azure Function Apps"],
+            "metrics": ["Agentic form-filling assistance", "Form-agnostic design", "Built with Microsoft Power Platform and Azure services"],
+            "links": {},
+            "timeframe": "2025-2026",
+            "notes": "Project built for NCDIT during my employment there."
+        },
+        {
+            "id": "ncdit_form_builder",
+            "name": "Form Builder Power App",
+            "aliases": ["ncdit form builder", "form builder power app", "fluid form builder"],
+            "summary": "A Power Apps application that allows users to build forms for the FLUID system. The app is built with Power Apps, Power Automate, and connects to Dataverse for data storage. Leverages the Adaptive Cards framework by Microsoft for form construction and rendering.",
+            "role": "Sole developer with guidance from the solutions architect",
+            "context": "Professional project while working at NCDIT",
+            "stack": ["Power Apps", "Power Automate", "Dataverse", "Adaptive Cards"],
+            "metrics": ["Form builder for FLUID system", "Connects to Dataverse for data storage", "Leverages Adaptive Cards framework for form construction and rendering", "Version control for forms", "Interacts with a separate form builder agent"],
+            "links": {},
+            "timeframe": "2025-2026",
+            "notes": "Project built for NCDIT during my employment there. I was the sole developer, but received requirements from the solutions architect."
+        }
+    ]
+}
