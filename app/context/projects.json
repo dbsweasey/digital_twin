@@ -56,11 +56,11 @@
             "id": "digital_twin",
             "name": "Digital Twin",
             "aliases": ["digital agent", "ai twin", "twin guy"],
-            "summary": "An AI agent built to act as a digital twin of David Sweasey. Uses an OpenAI LLM to answer questions relating to his career, background, experience, and skills.",
+            "summary": "An AI agent built to act as a digital twin of David Sweasey. Uses an OpenAI LLM to answer questions relating to his career, background, experience, and skills. Deployed on Render.",
             "role": "Sole developer",
             "context": "Personal project for professional networking",
             "category": "personal",
-            "stack": ["Python", "FastAPI", "SQLite", "OpenAI"],
+            "stack": ["Python", "FastAPI", "UV", "SQLite", "OpenAI", "OpenAI SDK"],
             "metrics": ["Multiple tools for accurate responses", "Contextual memory for follow-up questions", "Rate limiting and caching for cost control", "Sessions are saved for future reference"],
             "links": {},
             "timeframe": "2026"
@@ -113,7 +113,7 @@
             "role": "Sole developer",
             "context": "Personal project, for professional networking",
             "category": "personal",
-            "stack": ["React", "Vite", "Next.js", "FastAPI"],
+            "stack": ["React", "Vite", "Next.js", "FastAPI", "OpenAI SDK"],
             "metrics": ["Single-page application", "Connects to multiple backends for dynamic data", "Clean, responsive, and, personalized UI"],
             "links": {"repo": "https://github.com/dbsweasey/personal_webpage", "live": "https://www.davidbsweasey.ai"},
             "timeframe": "2025-2026"
