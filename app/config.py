@@ -45,8 +45,12 @@ MAX_ACTIVE_SESSIONS = 5000
 
 # --- Session cookie ---
 
-# The frontend and backend are on different domains (e.g. davidbsweasey.ai vs an
-# onrender.com URL), so the cookie needs SameSite=None + Secure to survive cross-site
-# fetch/XHR calls. Override via env vars for local http:// dev if needed.
+# The frontend is meant to reach this API through a same-site Vercel rewrite
+# (davidbsweasey.ai/api/* proxied to this Render service), which makes the cookie
+# first-party and avoids Safari ITP / Chrome Incognito rejecting it as a cross-site
+# cookie. We still default to SameSite=None + Secure so direct cross-origin access to
+# this service (cached old frontend builds, manual testing, localhost:5173 dev)
+# keeps working during/after the migration to the proxy. Override via env vars for
+# local http:// dev if needed.
 COOKIE_SECURE = os.getenv("COOKIE_SECURE", "true").lower() == "true"
 COOKIE_SAMESITE = os.getenv("COOKIE_SAMESITE", "none")
