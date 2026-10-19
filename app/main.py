@@ -79,6 +79,21 @@ def init(request: Request, response: Response):
         twin.add_session(session_id)
     return {"status": "running", "history": twin.sessions[session_id].history}
 
+@app.delete("/api/session")
+def clear_session(request: Request, response: Response):
+    """Ends the current session: drops it from memory and deletes the session cookie.
+    The client should call GET /api/ afterwards to start a fresh session."""
+    session_id = request.cookies.get("session_id")
+    if session_id is not None and not twin.remove_session(session_id):
+        raise HTTPException(status_code=409, detail="Please wait for the current response before clearing the chat.")
+    response.delete_cookie(
+        key="session_id",
+        httponly=True,
+        secure=config.COOKIE_SECURE,
+        samesite=config.COOKIE_SAMESITE,
+    )
+    return {"status": "cleared"}
+
 @app.post("/api/chat")
 @limiter.limit(config.IP_RATE_LIMIT)
 @limiter.limit(config.GLOBAL_RATE_LIMIT, key_func=lambda request: "global")

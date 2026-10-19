@@ -41,6 +41,16 @@ class Twin():
         """Adds a new session with the given session_id to memory."""
         self.sessions[session_id] = Session(SQLiteSession(session_id), [])
 
+    def remove_session(self, session_id: str) -> bool:
+        """Removes a session from memory. Refuses (returns False) while a request is in flight."""
+        s = self.sessions.get(session_id)
+        if s is None:
+            return True
+        if s.busy:
+            return False
+        del self.sessions[session_id]
+        return True
+
     def purge_expired(self):
         """Evicts idle sessions (no activity within SESSION_TTL_SECONDS) from memory.
         Never evicts a session with a request currently in flight."""
